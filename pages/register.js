@@ -6,7 +6,8 @@ const Register = () => {
   const [password, setPassword] = useState('');
 
   const handleSubmit = (e) => {
-
+    e.preventDefault();
+    console.table(name, email, password);
   }
   return(
     <>
@@ -37,6 +38,7 @@ const Register = () => {
             placeholder="Enter password"
             required
           />
+          <button className="btn btn-block btn-primary" type="submit">SUBMIT</button>
         </form>
       </div>
     </>
